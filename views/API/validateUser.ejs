@@ -1,0 +1,16 @@
+<% layout("/layouts/boilerplate") -%>
+    
+<div class="validate-div row-1 mt-5">
+    <h1>Welcome Back</h1>
+    <P>Verify the Authenticate Code</P>
+
+    <div class="validate-form col-3 mt-3 ">
+        <h2 class="mb-3">Two-Factor Authentication</h2>
+        <p>Open the two-step verification app on your mobile device to get your verification code</p>
+        <form method="post" action="/api/user/validate/<%=user._id %>" >
+            <input type="text" name="token" class="form-control mb-3" placeholder="Authentication Code">
+        <button class="btn btn-primary">Authenticate</button>
+        </form>
+    </div>
+</div>
+   

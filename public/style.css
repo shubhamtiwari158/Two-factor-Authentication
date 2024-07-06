@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    background-image: url(./assest/bg_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* height: ; */
+    min-height: fit-content-;
+}
+
+
+/* Navbar */
+.navbar{
+    min-height: 4.5rem;
+    max-height: fit-content;
+    background-color: white;
+    
+}
+
+.fa-unlock-keyhole{
+    font-size: 2rem;
+    color: #0e68ec;
+
+}
+
+.navbar-brand{
+font-size: 25px;
+}
+
+.nav-link{
+    color: #222222 !important;
+    font-size: 18px;
+}
+
+
+/* Home Page */
+.home-header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    background-image: url(./assest/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.home-header h1{
+    font-size: 55px;
+}
+
+.home-section{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 70vw;
+    margin: auto;
+    padding: 50px 50px;
+    margin-top: 30px;
+    line-height: 1.5;
+    font-size: 17px
+}
+
+.home-section h2{
+    color: #0e68ec;
+}
+
+.home-section a{
+    margin: auto;
+}
+
+
+/* Register & Login Page  */
+.main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 500px !important;
+    background: #fff !important;
+    border-radius: 10px;
+    margin: auto;
+    padding: 55px 55px;
+}
+
+.form-control{
+    outline: none !important;
+}
+
+.form h2, .form p{
+    color: #333;
+    text-align: center;
+    display: block;
+    line-height: 1.2;
+}
+
+.login-div, .register-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;
+    font-size: 15px;
+    margin-top: -37px;
+}
+
+.login-div p, .register-div p{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+/* Profile-Page */
+.profile-div{
+    background-color: #fff;
+    display: flex; 
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 80vw;
+    min-height: 50vh;
+    margin: auto;
+    margin-top: 60px;
+    padding: 50px 50px;
+}
+
+.profile-div h2{
+    color: #0e68ec;
+    font-weight: 700;
+}
+
+/* Verify Page */
+.verifyOTP-div{
+    background-color: #fff;
+    width: 50vw;
+    min-height: 100vh;
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+.verifyOTP-div h5{
+    color: #0e68ec;
+    border-bottom: 2px solid #f5f5f6;
+    padding-bottom: 5px;
+}
+
+
+/* Validate Page */
+.validate-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #fff; 
+}
+
+.validate-div h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.validate-div p{
+    font-size: 20px;
+}
+
+.validate-form{
+    background-color: #fff;
+    /* width: 30vw; */
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px 30px;
+    text-align: center;
+    color: #222222;
+}
+
+.validate-form h2{
+    color: #0e68ec;
+    border-bottom: 2px solid #f5f5f6;
+}
+
+.validate-form p{
+    font-size: 17px;
+}
+
+
+.detail-form{
+    width: 700px !important;
+    background: #fff !important;
+    border-radius: 10px;
+    /* margin: auto; */
+    padding: 55px 55px;
+}
+
+/* Error */
+.error-div{
+    background-color: #fff;
+    width: 30vw;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    padding: 30px 30px;
+    text-align: center;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+}
+
+.error-img{
+    /* border: 2px solid black; */
+    background-image: url(./assest/error.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 50%;
+}
+
+.error-content{
+    width: 50%;
+}
+
+.error-div h1{
+    color: #0e68ec;
+    font-size: 60px;
+    font-style:oblique;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f5f5f6;
+}
+
+.error-div h4{
+    color: #333;
+    line-height: inherit;
+    padding: 10px 10px;
+}

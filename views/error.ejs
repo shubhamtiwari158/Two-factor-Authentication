@@ -1,0 +1,14 @@
+<% layout("/layouts/boilerplate") -%>
+<div class="error-div">
+  <div class="error-content">
+    <h1>Oops!</h1>
+    <p>
+      Error - <%= err.status %><br />
+      <%= err.message %>
+    </p>
+
+    <a href="http://localhost:8080/api/home"
+      ><button class="btn btn-primary">Go To HomePage</button></a
+    >
+  </div>
+</div>

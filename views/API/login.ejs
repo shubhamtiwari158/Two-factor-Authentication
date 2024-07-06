@@ -1,0 +1,33 @@
+<% layout("/layouts/boilerplate") -%>
+<div class="main row">
+  <div class="form col-8 mt-5">
+      <h2 >Welcome Back!</h2>
+      <p  class="mb-4">Login to your account below</p>
+
+      <form action="/api/user/login" method="post" class="needs-validation" novalidate>
+        <div  class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+          <!-- <div class="invalid-feedback">
+            Valid Email required.
+           </div> -->
+        </div>
+  
+        <div  class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required/>
+          <!-- <div class="invalid-feedback">
+            Valid Password required.
+           </div> -->
+        </div>
+
+        <br>
+          <button class="btn btn-primary">Login</button>
+      </form>
+
+      <div class="register-div ">
+        <p>Create acccount?</p>
+        <a href="http://localhost:8080/api/user/register"><button class="btn btn-primary">Register</button></a>
+      </div>
+  </div>
+</div>

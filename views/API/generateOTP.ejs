@@ -1,0 +1,34 @@
+<% layout("/layouts/boilerplate") -%>
+<div class="verifyOTP-div mt-4">
+  <h2 class="mb-4">Two-Factor Authentication (2FA)</h2>
+
+  <h5 class="mt-4">Configuring Google Authentication or Authy</h5>
+  <ol>
+    <li>
+      Install Google Authentication (IOS - Android/) or Authy (IOS - Android)
+    </li>
+    <li>In the authentication app select '+' icon</li>
+    <li>
+      Select 'Scan a barcode (or QR code)' ans use the phone's camera to scan
+      this barcode.
+    </li>
+  </ol>
+
+  <h5 class="mt-4">Scan QR Code</h5>
+  <div class="qrcode">
+    <img src="<%= data_url %> " />
+  </div>
+
+  <h5 class="mt-4">Or Enter Code into Your App</h5>
+  <p>Secret Key: <%= user.secret.base32 %>(Base32 encoded)</p>
+
+  <h5 class="mt-4">Verify Code</h5>
+  <p>To Setup the 2FA please verify the authentication code</p>
+
+  <div class="row-1 mt-3">
+    <form method="POST" action="/api/user/verifyOTP/<%= user._id %>?_method=PUT" class="col-5">
+        <input type="text" name="token" class="form-control" placeholder="Authentication code" required/>
+        <button class="btn btn-primary mt-4">Verify & Activate</button>
+      </form>
+  </div>
+</div>

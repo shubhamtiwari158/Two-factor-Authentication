@@ -1,0 +1,41 @@
+<% layout("/layouts/boilerplate") -%>
+<div class="main row">
+  <div class="form col-8 mt-5">
+      <h2 >Create New Account!</h2>
+      <p  class="mb-4">Fill the form below to register</p>
+  
+      <form action="/api/user/register" method="post" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" name="username" id="username" class="form-control" placeholder="Enter your username" required/>
+          <div class="invalid-feedback">
+           Valid Username required.
+          </div>
+        </div>
+  
+        <div  class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+          <div class="invalid-feedback">
+            Valid Email required.
+           </div>
+        </div>
+  
+        <div  class="mb-3">
+          <label for="user" class="form-label">Password</label>
+          <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required/>
+          <div class="invalid-feedback">
+           Valid Password required.
+           </div>
+        </div>
+
+        <br>
+          <button class="btn btn-primary">Register</button>
+      </form>
+
+      <div class="login-div ">
+        <p>Already registered?</p>
+        <a href="http://localhost:8080/api/user/login"><button class="btn btn-primary">Login</button></a>
+      </div>
+  </div>
+</div>
